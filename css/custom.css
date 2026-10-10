@@ -117,3 +117,9 @@
   #skills-section .services,
   #services-section .services {
     width: 100%; }
+
+/* Tighter gap between Services and Recent Work */
+#services-section {
+  padding-bottom: 2em; }
+#projects-section {
+  padding-top: 3em; }
