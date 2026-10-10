@@ -142,3 +142,10 @@
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y; }
+
+/* Contact details: stack together at the top instead of spreading down the form's height */
+#contact-section .block-9 .col-md-4 > .row {
+  align-content: flex-start;
+  width: 100%; }
+  #contact-section .dbox {
+    margin-bottom: 25px; }
