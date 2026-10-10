@@ -59,17 +59,17 @@
 .hero-photo {
   position: absolute;
   top: 0; right: 0; bottom: 0;
-  width: 72%;
+  width: 56%;
   z-index: 0;
   background: rgba(0, 0, 0, 0.1);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, calc(31% - 10px) 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, calc(31% - 10px) 50%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, calc(25% - 10px) 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, calc(25% - 10px) 50%); }
 .hero-photo-img {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url(../images/eniola-wide.jpg) right top / cover no-repeat;
-  -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 31% 50%);
-  clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 31% 50%); }
+  background: url(../images/eniola.webp) center top / cover no-repeat;
+  -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 25% 50%);
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 25% 50%); }
 
 /* Small laptops: slightly smaller heading so it clears the photo */
 @media (min-width: 992px) and (max-width: 1199.98px) {
