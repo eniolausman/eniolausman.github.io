@@ -123,3 +123,11 @@
   padding-bottom: 2em; }
 #projects-section {
   padding-top: 3em; }
+
+/* Project screenshots: wide tiles, two per row, showing the top of each page */
+.ftco-project .project {
+  height: auto;
+  aspect-ratio: 2.2 / 1;
+  background-position: center top; }
+#projects-section > .container-fluid {
+  max-width: 1300px; }
