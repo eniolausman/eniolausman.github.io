@@ -109,3 +109,11 @@
 /* Keep faces in frame */
 .img-about .img {
   background-position: center top !important; }
+
+/* Cards in a row all match the tallest one */
+#skills-section .row > [class*="col-lg-"],
+#services-section .row > [class*="col-lg-"] {
+  display: flex; }
+  #skills-section .services,
+  #services-section .services {
+    width: 100%; }
