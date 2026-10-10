@@ -147,5 +147,8 @@
 #contact-section .block-9 .col-md-4 > .row {
   align-content: flex-start;
   width: 100%; }
+@media (min-width: 768px) {
+  #contact-section .block-9 .col-md-4 > .row {
+    padding-top: 50px; }
   #contact-section .dbox {
-    margin-bottom: 25px; }
+    margin-bottom: 55px; } }
