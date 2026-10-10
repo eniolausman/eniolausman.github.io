@@ -74,7 +74,13 @@
 /* Small laptops: slightly smaller heading so it clears the photo */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .owl-carousel.home-slider .slider-item .slider-text h1 {
-    font-size: 44px; } }
+    font-size: 40px;
+    max-width: 440px; } }
+
+/* Narrow phones: smaller heading so long words don't get cut off */
+@media (max-width: 575.98px) {
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 32px; } }
 
 /* Phones/tablets: photo fills the hero with a navy tint so the text on top stays readable */
 @media (max-width: 991.98px) {
