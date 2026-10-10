@@ -53,25 +53,48 @@
     font-size: 24px;
     font-weight: 700; }
 
-/* Narrower hero photo on laptops so the heading doesn't cross the face */
-@media (min-width: 992px) {
-  .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    width: 46%; } }
+/* Hero photo: stays still behind the sliding text, with the template's arrow-shaped left edge */
+.hero {
+  position: relative; }
+.hero-photo {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 48%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 170px 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 170px 50%); }
+.hero-photo-img {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center top;
+  -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 180px 50%);
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 180px 50%); }
 
-/* On phones/tablets the heading sits over the photo: tint it so the text stays readable */
+/* Phones/tablets: photo fills the hero with a navy tint so the text on top stays readable */
 @media (max-width: 991.98px) {
-  .owl-carousel.home-slider .slider-item .slider-text .one-third:before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(22, 35, 74, 0.6); }
+  .hero-photo {
+    width: 100%;
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .hero-photo-img {
+    -webkit-clip-path: none;
+    clip-path: none; }
+    .hero-photo-img:after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(22, 35, 74, 0.6); }
+  .owl-carousel.home-slider .slider-item .slider-text .text h1 {
+    color: #fff; }
   .owl-carousel.home-slider .slider-item .slider-text .text .subheading,
   .owl-carousel.home-slider .slider-item .slider-text .text .btn-outline-primary {
     color: #fff; }
   .owl-carousel.home-slider .slider-item .slider-text .text .btn-outline-primary {
-    border-color: #fff; } }
+    color: #fff !important;
+    border-color: #fff !important; } }
 
 /* Keep faces in frame */
-.hero .one-third.img,
 .img-about .img {
   background-position: center top !important; }
