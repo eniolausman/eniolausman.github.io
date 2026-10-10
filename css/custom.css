@@ -136,3 +136,9 @@
   background-position: center top; }
 #projects-section > .container-fluid {
   max-width: 1300px; }
+
+/* The carousel blocks all touch panning on its slides (touch-action: none), and on phones
+   the hero fills the screen, so the page couldn't be scrolled. Allow vertical scrolling. */
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y; }
