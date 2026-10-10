@@ -122,7 +122,12 @@
 #services-section {
   padding-bottom: 2em; }
 #projects-section {
-  padding-top: 3em; }
+  padding-top: 3em;
+  padding-bottom: 2em; }
+#contact-section {
+  padding-top: 4em; }
+  #contact-section .heading-section {
+    margin-bottom: 0 !important; }
 
 /* Project screenshots: wide tiles, two per row, showing the top of each page */
 .ftco-project .project {
